@@ -5,26 +5,26 @@
 
 + Linguagem imperativa
 
-O programa é feito através da escrita de enunciados que
+  O programa é feito através da escrita de enunciados que
 representam comandos e instruções que o computador deve
 executar.
 
 + Linguagem procedural
 
-O código consiste em procedimentos que expressam um
+  O código consiste em procedimentos que expressam um
 conjunto de passos que o computador deve executar.
 
 + Linguagem de alto nível
 
-São linguagens com um nível de abstração relativamente
+  São linguagens com um nível de abstração relativamente
 distante do código da máquina e mais próximo da
 linguagem humana.
 
 + Tipagem estática
 
-O tipo da variável é definido no tempo da compilação.
+  O tipo da variável é definido no tempo da compilação.
 
-: A ACM (Association for Computing Machinery)
+> A ACM (Association for Computing Machinery)
 : classifica a linguagem C como de "médio nível",
 : mas esse é um debate que não tem fim e não leva
 : a absolutamente nada.
@@ -36,14 +36,14 @@ O tipo da variável é definido no tempo da compilação.
   * Nossos programas serão compilados com o seguinte
     comando do GCC:
     
-:     :~$ gcc -Wall <fontes.c> -o <destino> 
+>     :~$ gcc -Wall <fontes.c> -o <destino> 
 
   * Isso produz o binário executável <destino> na
     mesma pasta dos arquivos <fontes.c>.
 
   * Para executá-los...
 
-:     :~$ ./programa
+>     :~$ ./programa
 
 ## 2 - Os elementos básicos
 
@@ -134,13 +134,13 @@ operadores básicos de qualquer outra linguagem:
 Além desses grupos, outros operadores que veremos
 muito na linguagem C são:
 
-: *var     - Aponta para uma variável (indireção)
-: &var     - Retorna o endereço de uma variável
-: sizeof() - Retorna o tamanho de uma variável
+> *var     - Aponta para uma variável (indireção)
+> &var     - Retorna o endereço de uma variável
+> sizeof() - Retorna o tamanho de uma variável
 
 ## 2.4 - Instruções
 
-As instruções na linguagem C são delimitadas pelo
+ As instruções na linguagem C são delimitadas pelo
 caractere ';'.
     
 Não utilizamos o ponto-e-vírgula após:
@@ -183,7 +183,7 @@ Tem seus blocos delimitados por chaves:
     
   * Os cabeçalhos são incluídos no código pela diretiva...
   
-:     #include <arquivo.h>
+>     #include <arquivo.h>
     
 + Funções definidas pelo usuário
 
@@ -203,14 +203,14 @@ Dentre as diretivas mais comuns, nós podemos citar:
 
 + Diretiva #include
 
-Inclui um arquivo externo no ponto em que ela aparecer
+ Inclui um arquivo externo no ponto em que ela aparecer
 no código. É utilizada para a inclusão de arquivos de
 cabeçalho e, desta forma, disponibilizar funções e
 outras definições para o nosso uso.
 
 + Diretiva #define
 
-Define "macros", entre as quais, as constantes
+ Define "macros", entre as quais, as constantes
 simbólicas que poderão ser utilizadas de qualquer
 parte do código.
 
@@ -267,18 +267,20 @@ parte do código.
 
 
 * sucesso.c
-
-: int main() {
-:    return 0;
-: }
+```
+int main() {
+    return 0;
+ }
+```
 
 
 
 * erro.c
-
-: int main() {
-:    return 1;
-: }
+```
+int main() {
+    return 1;
+ }
+```
 
 ## 3.1 - Escrevendo na saída padrão
 
@@ -287,14 +289,14 @@ parte do código.
 
 * ola-mundo.c
 
-: #include <stdio.h>
+```
+#include <stdio.h>
 
-: int main() {
-    
-:     puts("Olá, mundo!");
-   
-:     return 0;
-: }
+int main() {  
+     puts("Olá, mundo!");  
+     return 0;
+ }
+```
 
 ## 3.2 - Recebendo argumentos da linha de comando
 
@@ -303,7 +305,7 @@ parte do código.
 
 
 
-: #include <stdio.h>
+> #include <stdio.h>
 
 : int main(int argc, char *argv[]) {
     
